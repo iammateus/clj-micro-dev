@@ -6,3 +6,14 @@
 23:17:13.834 [qtp63010542-20] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
 23:17:13.864 [qtp63010542-20] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
 23:17:13.878 [qtp63010542-20] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:26:23.941 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @27215ms to org.eclipse.jetty.util.log.Slf4jLog
+23:26:25.055 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.16+8
+23:26:25.210 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@6850c02{/,null,AVAILABLE}
+23:26:25.274 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@700e4826{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8080}
+23:26:25.276 [main] INFO  org.eclipse.jetty.server.Server  - Started @28568ms
+23:26:35.797 [qtp1977082152-20] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:26:35.832 [qtp1977082152-20] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:26:35.909 [qtp1977082152-20] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:27:07.081 [qtp1977082152-13] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:27:07.084 [qtp1977082152-13] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:27:07.593 [qtp1977082152-13] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}

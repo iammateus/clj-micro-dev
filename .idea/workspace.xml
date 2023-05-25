@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clj_micro_dev/server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj_micro_dev/server.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clj_micro_dev/service.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj_micro_dev/service.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

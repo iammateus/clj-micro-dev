@@ -2,7 +2,17 @@
   (:gen-class) ; for -main method in uberjar
   (:require [io.pedestal.http :as server]
             [io.pedestal.http.route :as route]
+            [ns-tracker.core :refer [ns-tracker]]
             [clj-micro-dev.service :as service]))
+
+(defonce modified-namespaces
+         (ns-tracker ["src" "test"]))
+
+(defn watch-routes-fn [routes]
+      (fn []
+          (doseq [ns-sym (modified-namespaces)]
+                 (require ns-sym :reload))
+          (route/expand-routes routes)))
 
 ;; This is an adapted service map, that can be started and stopped
 ;; From the REPL you can call server/start and server/stop on this service
@@ -18,7 +28,7 @@
               ::server/join? false
               ;; Routes can be a function that resolve routes,
               ;;  we can use this to set the routes to be reloadable
-              ::server/routes #(route/expand-routes (deref #'service/routes))
+              ::server/routes (watch-routes-fn (service/routes))
               ;; all origins are allowed in dev mode
               ::server/allowed-origins {:creds true :allowed-origins (constantly true)}
               ;; Content Security Policy (CSP) is mostly turned off in dev mode
