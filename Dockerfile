@@ -1,8 +1,12 @@
-FROM openjdk:8-alpine
-MAINTAINER Your Name <you@example.com>
+FROM openjdk:11
 
-ADD target/clj-micro-dev-0.0.1-SNAPSHOT-standalone.jar /clj-micro-dev/app.jar
+WORKDIR app
+
+RUN apt update
+RUN apt install leiningen -y
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "/clj-micro-dev/app.jar"]
+ENTRYPOINT ["lein"]
+
+CMD ["run-dev"]
