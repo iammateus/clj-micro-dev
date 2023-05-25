@@ -1,6 +1,6 @@
 # clj-micro-dev
 
-This is a Clojure/Pedestal microservice project designed to enhance your development experience with hot-reloading capabilities.
+This is a Clojure/Pedestal microservice project with hot-reload for better development experience.
 
 ## Run
 
